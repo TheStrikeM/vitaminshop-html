@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.header {
+  margin: 25px var(--margins);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 90%;
+}
+.header__logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.header__logo img {
+  width: var(--logo);
+  height: var(--logo);
+}
+.header__logo span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--px25);
+}
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  padding: var(--logo-button-padding);
+  border-radius: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.header__button img {
+  width: var(--logo-button-size);
+  height: var(--logo-button-size);
+}
+.header__button:hover {
+  border-radius: 0%;
+}
+
+.wrapper {
+  margin: 0px var(--margins);
+  transform: translateY(200px);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main img {
+  width: var(--main-orange-width);
+  height: var(--main-orange-height);
+}
+.main .main-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .main-text img {
+  width: var(--main-bg-decor-size);
+  height: var(--main-bg-decor-size);
+}
+.main .main-text__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--px40);
+  line-height: var(--px40);
+  color: var(--title);
+  width: var(--main-title-width);
+  background-image: url("img/background_dot.svg");
+}
+.main .main-text .arrow-button {
+  background-color: var(--bg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  width: 45%;
+  padding: 10px;
+  margin-top: var(--px150);
+  transition: 0.8s;
+}
+.main .main-text .arrow-button span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--px16);
+}
+.main .main-text .arrow-button img {
+  width: var(--arrow-button-arrow-width);
+  height: var(--arrow-button-arrow-height);
+}
+
+:root {
+  --px25: 25px;
+  --px40: 40px;
+  --px16: 16px;
+  --px150: 150px;
+  --margins: 100px;
+  --logo: 41px;
+  --logo-button-padding: 25px;
+  --logo-button-size: 26px;
+  --bg: #FFF59E;
+  --title: #14142B;
+  --main-orange-width: 645px;
+  --main-orange-height: 495px;
+  --main-bg-decor-size: 185px;
+  --arrow-button-arrow-width: 26px;
+  --arrow-button-arrow-height: 26px;
+  --arrow-button-padding-top: 10px;
+  --main-title-width: 330px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFEE2;
+}

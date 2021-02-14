@@ -1,0 +1,46 @@
+.header {
+    margin: 25px var(--margins);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+
+    &__logo {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+
+        img {
+            width: var(--logo);
+            height: var(--logo);
+        }
+
+        span {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: var(--px25);
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg);
+        padding: var(--logo-button-padding);
+        border-radius: 100%;
+        transition: 0.5s;
+        cursor: pointer;
+
+        img {
+            width: var(--logo-button-size);
+            height: var(--logo-button-size);
+        }
+
+        &:hover {
+            border-radius: 0%;
+        }
+    }
+}
