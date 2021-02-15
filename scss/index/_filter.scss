@@ -1,9 +1,135 @@
 .filter {
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .categorys {
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+
+        .citem {
+            background-color: white;
+            padding: 40px 20px;
+            border-radius: 15%;
+            cursor: pointer;
+            transition: 0.8s;
+
+            .citem-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 10px;
+
+                &__title {
+                    @include defaultText(bold);
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: black;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        .citem-active {
+            background-color: #520101;
+            padding: 40px 20px;
+            border-radius: 15%;
+            cursor: pointer;
+            transition: 0.8s;
+
+            .citem-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 10px;
+
+                &__title {
+                    @include defaultText(bold);
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: white;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    .filters {
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .search {
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+
+            input {
+                background-color: lighten(#EFF0F6, 5%);
+                padding: 15px;
+                width: 295px;
+                @include defaultText(normal);
+                font-size: 15px;
+                outline: none;
+                border-radius: 10px;
+                border: none;
+                color: #14142B;
+                transition: 0.5s;
+
+                &:focus {
+                    background-color: #EFF0F6;
+                }
+            }
+        }
+
+        .sort {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            &__title {
+                color: $title;
+                @include defaultText(normal);
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            &__type {
+                padding: 10px 30px;
+                background-color: white;
+                border-radius: 25%;
+                cursor: pointer;
+                transition: 0.8s;
+
+                span {
+                    color: darkgray;
+                    @include defaultText(normal);
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+
+                img {
+                    transition: 0.5s;
+                }
+
+                &:active {
+                    img {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
     }
 }

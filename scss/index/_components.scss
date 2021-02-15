@@ -7,3 +7,27 @@
     text-align: center;
     margin-top: 110px;
 }
+
+.arrow-button {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    transition: 0.8s;
+    padding: 10px 20px;
+    background-color: $bg;
+    color: $title;
+    @include defaultText(normal);
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.01);
+        background-color: darken($bg, 15%);
+    }
+
+    &:active {
+        transform: scale(1.01);
+        background-color: darken($bg, 25%);
+    }
+}
