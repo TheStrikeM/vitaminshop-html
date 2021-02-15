@@ -4,13 +4,14 @@
     font-weight: $type;
 }
 
-@import './header';
-@import './wrapper';
-@import './main';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
 $bg: #FFF59E;
 $title: #14142B;
+
+@import './header';
+@import './wrapper';
+@import '../container';
+@import './main';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
     margin: 0;
