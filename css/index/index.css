@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 .header {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 90%;
 }
 .header__logo {
+  margin-left: 50px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -30,6 +32,7 @@
   border-radius: 100%;
   transition: 0.5s;
   cursor: pointer;
+  width: 3%;
 }
 .header__button img {
   width: 25px;
@@ -45,9 +48,9 @@
 }
 
 .container {
-  margin: 0 auto;
-  padding: 15px;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .main {
@@ -98,6 +101,16 @@
 .main .main-text .arrow-button img {
   width: 26px;
   height: 26px;
+}
+
+.mouser {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.to-arrow {
+  text-align: center;
+  margin-top: 110px;
 }
 
 * {
