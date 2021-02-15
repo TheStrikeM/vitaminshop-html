@@ -5,6 +5,7 @@
     position: fixed;
     width: 90%;
     z-index: 100;
+    flex-wrap: wrap;
 
     &__logo {
         margin-left: 50px;

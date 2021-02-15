@@ -3,3 +3,48 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .to-arrow {
+        text-align: center;
+        margin-top: 110px;
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .to-arrow {
+        text-align: center;
+        margin-top: 110px;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .to-arrow {
+        text-align: center;
+        margin-top: 110px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        max-width: 100%;
+    }
+    .to-arrow {
+        text-align: center;
+        margin-top: 110px;
+        max-width: 500px;
+    }
+}
