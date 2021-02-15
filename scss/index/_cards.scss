@@ -1,0 +1,131 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+        margin-right: 40px;
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: -100px 100px 200px rgba(255, 245, 158, 0.2), 100px -100px 200px rgba(255, 245, 158, 0.2), -100px -100px 200px rgba(255, 245, 158, 0.9), 100px 100px 250px rgba(255, 245, 158, 0.9), inset 4px 4px 5px rgba(255, 245, 158, 0.3), inset -4px -4px 5px rgba(255, 245, 158, 0.5);
+        border-radius: 20px;
+        &__ava {
+            width: 280px;
+            height: 220px;
+        }
+
+        p {
+            @include defaultText(normal);
+            font-size: 23px;
+            line-height: 28px;
+            color: $title;
+
+            span {
+                @include defaultText(normal);
+                font-size: 15px;
+                line-height: 28px;
+                color: #828282;
+            }
+        }
+
+        .size {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            &__item {
+                cursor: pointer;
+                background-color: white;
+                padding: 5px 15px;
+                border-radius: 10px;
+                @include defaultText(normal);
+                font-size: 15px;
+                line-height: 28px;
+            }
+
+            &__item-active {
+                cursor: pointer;
+                background-color: black;
+                color: white;
+                padding: 5px 15px;
+                border-radius: 10px;
+                @include defaultText(normal);
+                font-size: 15px;
+                line-height: 28px;
+            }
+        }
+
+        .final {
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 15px;
+            
+            &__price {
+                @include defaultText(normal);
+                font-size: 21px;
+                line-height: 28px;
+                color: #00BA88;
+            }
+
+            &__button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+                transition: 0.8s;
+                padding: 5px 10px;
+                background-color: $bg;
+                color: $title;
+                @include defaultText(normal);
+                font-size: 18px;
+                line-height: 28px;
+                cursor: pointer;
+                width: 100%;
+            
+                img {
+                    width: 46px;
+                    height: 20px;
+                }
+            
+                &:hover {
+                    transform: scale(1.01);
+                    background-color: darken($bg, 15%);
+                }
+            
+                &:active {
+                    transform: scale(1.01);
+                    background-color: darken($bg, 25%);
+                }
+            }
+
+            &__button-selected {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+                transition: 0.8s;
+                padding: 5px 10px;
+                background-color: #d3d3d3;
+                color: $title;
+                @include defaultText(normal);
+                font-size: 18px;
+                line-height: 28px;
+                cursor: pointer;
+                width: 100%;
+            
+                img {
+                    width: 46px;
+                    height: 20px;
+                }
+            }
+        }
+
+    }
+}

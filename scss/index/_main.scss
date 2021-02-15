@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     img {
         width: 645px;
@@ -12,10 +13,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        img {
-            width: 185px;
-            height: 185px;
-        }
 
         &__title {
             @include defaultText(bold);
@@ -23,33 +20,6 @@
             line-height: 40px;
             color: $title;
             width: 330px;
-        }
-
-        .arrow-button {
-            background-color: $bg;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            column-gap: 5px;
-            width: 45%;
-            padding: 10px;
-            margin-top: 150px;
-            transition: 0.8s;
-
-            &:hover {
-
-            }
-
-            span {
-                @include defaultText(normal);
-                font-size: 16px;
-            }
-
-            img {
-                width: 26px;
-                height: 26px;
-            }
         }
     }
 }

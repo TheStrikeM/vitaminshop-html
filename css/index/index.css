@@ -5,6 +5,7 @@
   justify-content: space-between;
   position: fixed;
   width: 90%;
+  z-index: 100;
 }
 .header__logo {
   margin-left: 50px;
@@ -57,6 +58,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .main img {
   width: 645px;
@@ -67,10 +69,6 @@
   justify-content: center;
   flex-direction: column;
 }
-.main .main-text img {
-  width: 185px;
-  height: 185px;
-}
 .main .main-text__title {
   font-family: Poppins;
   font-style: normal;
@@ -79,28 +77,6 @@
   line-height: 40px;
   color: #14142B;
   width: 330px;
-}
-.main .main-text .arrow-button {
-  background-color: #FFF59E;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 5px;
-  width: 45%;
-  padding: 10px;
-  margin-top: 150px;
-  transition: 0.8s;
-}
-.main .main-text .arrow-button span {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-}
-.main .main-text .arrow-button img {
-  width: 26px;
-  height: 26px;
 }
 
 .mouser {
@@ -113,9 +89,14 @@
   margin-top: 110px;
 }
 
+.line {
+  margin: 50px 0;
+}
+
 .arrow-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 10px;
   transition: 0.8s;
   padding: 10px 20px;
@@ -127,6 +108,11 @@
   font-size: 18px;
   line-height: 28px;
   cursor: pointer;
+  width: 50%;
+}
+.arrow-button img {
+  width: 26px;
+  height: 10px;
 }
 .arrow-button:hover {
   transform: scale(1.01);
@@ -260,6 +246,137 @@
 }
 .filter .filters .sort__type:active img {
   transform: rotate(180deg);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards .card {
+  margin-right: 40px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: -100px 100px 200px rgba(255, 245, 158, 0.2), 100px -100px 200px rgba(255, 245, 158, 0.2), -100px -100px 200px rgba(255, 245, 158, 0.9), 100px 100px 250px rgba(255, 245, 158, 0.9), inset 4px 4px 5px rgba(255, 245, 158, 0.3), inset -4px -4px 5px rgba(255, 245, 158, 0.5);
+  border-radius: 20px;
+}
+.cards .card__ava {
+  width: 280px;
+  height: 220px;
+}
+.cards .card p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 28px;
+  color: #14142B;
+}
+.cards .card p span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  color: #828282;
+}
+.cards .card .size {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.cards .card .size__item {
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+}
+.cards .card .size__item-active {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+}
+.cards .card .final {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+}
+.cards .card .final__price {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 28px;
+  color: #00BA88;
+}
+.cards .card .final__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  transition: 0.8s;
+  padding: 5px 10px;
+  background-color: #FFF59E;
+  color: #14142B;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+  width: 100%;
+}
+.cards .card .final__button img {
+  width: 46px;
+  height: 20px;
+}
+.cards .card .final__button:hover {
+  transform: scale(1.01);
+  background-color: #ffed52;
+}
+.cards .card .final__button:active {
+  transform: scale(1.01);
+  background-color: #ffe81f;
+}
+.cards .card .final__button-selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  transition: 0.8s;
+  padding: 5px 10px;
+  background-color: #d3d3d3;
+  color: #14142B;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+  width: 100%;
+}
+.cards .card .final__button-selected img {
+  width: 46px;
+  height: 20px;
 }
 
 * {
