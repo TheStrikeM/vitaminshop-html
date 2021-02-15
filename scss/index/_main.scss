@@ -4,8 +4,8 @@
     align-items: center;
 
     img {
-        width: var(--main-orange-width);
-        height: var(--main-orange-height);
+        width: 645px;
+        height: 495px;
     }
 
     .main-text {
@@ -13,21 +13,20 @@
         justify-content: center;
         flex-direction: column;
         img {
-            width: var(--main-bg-decor-size);
-            height: var(--main-bg-decor-size);
+            width: 185px;
+            height: 185px;
         }
 
         &__title {
             @include defaultText(bold);
-            font-size: var(--px40);
-            line-height: var(--px40);
-            color: var(--title);
-            width: var(--main-title-width);
-            background-image: url("img/background_dot.svg");
+            font-size: 40px;
+            line-height: 40px;
+            color: $title;
+            width: 330px;
         }
 
         .arrow-button {
-            background-color: var(--bg);
+            background-color: $bg;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -35,7 +34,7 @@
             column-gap: 5px;
             width: 45%;
             padding: 10px;
-            margin-top: var(--px150);
+            margin-top: 150px;
             transition: 0.8s;
 
             &:hover {
@@ -44,12 +43,12 @@
 
             span {
                 @include defaultText(normal);
-                font-size: var(--px16);
+                font-size: 16px;
             }
 
             img {
-                width: var(--arrow-button-arrow-width);
-                height: var(--arrow-button-arrow-height);
+                width: 26px;
+                height: 26px;
             }
         }
     }

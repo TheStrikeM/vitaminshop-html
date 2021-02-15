@@ -9,26 +9,12 @@
 @import './main';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-:root {
-    --px25: 25px;
-    --px40: 40px;
-    --px16: 16px;
-    --px150: 150px;
-    --margins: 100px;
+$bg: #FFF59E;
+$title: #14142B;
 
-    --logo: 41px;
-    --logo-button-padding: 25px;
-    --logo-button-size: 26px;
-    --bg: #FFF59E;
-    --title: #14142B;
-
-    --main-orange-width: 645px;
-    --main-orange-height: 495px;
-    --main-bg-decor-size: 185px;
-    --arrow-button-arrow-width: 26px;
-    --arrow-button-arrow-height: 26px;
-    --arrow-button-padding-top: 10px;
-    --main-title-width: 330px;
+* {
+    margin: 0;
+    padding: 0;    
 }
 
 body {
