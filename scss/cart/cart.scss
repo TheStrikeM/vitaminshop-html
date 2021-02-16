@@ -1,0 +1,23 @@
+@mixin defaultText($type) {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: $type;
+}
+
+$bg: #FFF59E;
+$title: #14142B;
+$money: #00BA88;
+
+@import './header';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFEE2;
+}

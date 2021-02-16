@@ -132,7 +132,7 @@
 .to-arrow {
   text-align: center;
   margin-top: 110px;
-  width: 2%;
+  width: 2% !important;
   height: 135px;
 }
 

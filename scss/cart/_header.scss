@@ -1,0 +1,50 @@
+.header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+    z-index: 100;
+    flex-wrap: wrap;
+
+    &__logo {
+        margin-left: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        span {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg;
+        padding: 25px;
+        border-radius: 100%;
+        transition: 0.5s;
+        cursor: pointer;
+        width: 3%;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        &:hover {
+            border-radius: 0%;
+        }
+    }
+}

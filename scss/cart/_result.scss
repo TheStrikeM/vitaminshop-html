@@ -1,0 +1,16 @@
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+
+    .products {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .count {
+
+    }
+}
